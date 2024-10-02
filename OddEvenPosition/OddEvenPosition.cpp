@@ -1,6 +1,7 @@
 #include <iostream>
-#include <limits.h>
+//#include <climits>
 #include <iomanip>
+#include <cfloat>
 
 using namespace std;
 
@@ -10,7 +11,7 @@ int main()
     cin >> n;
 
     double oddSum = 0, evenSum = 0;
-    double oddMin = 999999999999999.0, evenMin = 999999999999999.0, oddMax = -999999999999999.0, evenMax = -999999999999999.0;
+    double oddMin = DBL_MAX, evenMin = DBL_MAX, oddMax = -DBL_MAX, evenMax = -DBL_MAX;
     
     double oddNumber, evenNumber;
 
